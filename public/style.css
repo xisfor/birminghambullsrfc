@@ -1,0 +1,327 @@
+/* Reset */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  background-color: #eee;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Helpers */
+
+/* yellow fdd944 */
+/* red d62631 */
+/* blue 0d4d8b */
+
+/* Quickly invoke flexbox.
+   Useful for making columns of direct children */
+.flex {
+  display: flex;
+}
+.flex-space-between {
+  justify-content: space-between;
+}
+
+/* Spacing */
+.mt-15 {
+  margin-top: 15px;
+}
+.mr-15 {
+  margin-right: 15px;
+}
+.mb-15 {
+  margin-bottom: 15px;
+}
+.ml-15 {
+  margin-left: 15px;
+}
+
+.pt-15 {
+  padding-top: 15px;
+}
+.pr-15 {
+  padding-right: 15px;
+}
+.pb-15 {
+  padding-bottom: 15px;
+}
+.pl-15 {
+  padding-left: 15px;
+}
+
+/* Constrain width and centre content */
+.container {
+  /* max-width: 780px; */
+  margin-right: 25px;
+  margin-left: 25px;
+  padding-right: 10px;
+  padding-left: 10px;
+  position: relative;
+}
+
+.content p {
+  line-height: 1.5em;
+}
+.content p,
+.content h1,
+.content h2,
+.content h3,
+.content h4 {
+  margin-bottom: 1.5em;
+}
+
+.table {
+  border-spacing: 0;
+}
+
+.table th {
+  background-color: #d6d6d6;
+}
+
+.table th,
+.table td {
+  padding: 10px 15px;
+  border-bottom: 1px solid #ccc;
+  text-align: left;
+}
+
+/* .section {
+  padding-top: 15px;
+  padding-bottom: 15px;
+} */
+
+.bg-yellow {
+  background: #fdd944;
+  color: #000;
+}
+
+.bg-bluegradient {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(13, 77, 139, 1) 100%
+  );
+  color: #eee;
+}
+
+.bg-red {
+  background-color: #da1f21;
+  color: #eee;
+}
+
+.bg-white {
+  background-color: #eee;
+  color: #333;
+}
+
+.bg-black {
+  background-color: #222;
+  color: #eee;
+}
+
+/* Section specific */
+
+.rainbow-text {
+  background: linear-gradient(
+    to right,
+    orange,
+    yellow,
+    green,
+    cyan,
+    blue,
+    violet
+  );
+  background-clip: text;
+  color: transparent;
+}
+
+.header {
+  /* padding-top: 10px; */
+  /* height: 100px; */
+}
+/* .logo-outer {
+  position: relative;
+} */
+.logo {
+  position: absolute;
+  /* height: 80px; */
+  width: 80px;
+  z-index: 100;
+  top: 15px;
+  /* display: none; */
+}
+
+.brand {
+  color: #fdd944;
+
+  font-family: "Graduate", cursive;
+  font-size: 44px;
+
+  /* To give the title text a red border */
+  text-shadow: -1px 0 #d62631, 0 1px #d62631, 1px 0 #d62631, 0 -1px #d62631;
+
+  /* margin-bottom: 0; */
+}
+.tagline {
+  color: #eee;
+  /* margin-bottom: 0; */
+  font-family: "Courier New", Courier, monospace;
+  font-size: 24px;
+
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+.credit {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 12px;
+}
+.credit a {
+  color: #999;
+  text-decoration: none;
+}
+
+.nav {
+  justify-content: flex-end;
+}
+
+.nav a {
+  padding: 20px;
+  color: #eee;
+  text-decoration: none;
+
+  /* height: 50px; */
+
+  /* background-color: rgba(2, 0, 36, .5); */
+}
+
+.nav a:hover {
+  /* padding: 15px; */
+  background-color: rgba(2, 0, 36, 0.8);
+}
+
+.hero {
+  position: relative;
+  /* margin-bottom: 30px; */
+}
+.hero-overlay-outer {
+  position: relative;
+}
+.hero-overlay {
+  position: absolute;
+  top: 45px;
+  left: 0px;
+  padding: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background: rgba(2, 0, 36, 0.5);
+}
+#hero-image {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  min-height: 335px;
+  max-height: 400px;
+  width: 100%;
+  z-index: -1;
+}
+
+.fixtures {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.fixtures table {
+  width: 100%;
+  text-align: center;
+}
+
+.fixtures thead {
+  color: #999;
+}
+
+.fixture {
+  /* justify-content: space-evenly; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* text-align: center; */
+  text-transform: uppercase;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.fixture > div {
+  /* padding-right: 30px; */
+}
+
+.fixtures td:first-child {
+  text-align: right;
+  padding-right: 15px;
+}
+
+.fixtures td:last-child {
+  text-align: left;
+  padding-left: 15px;
+}
+
+.fixture td {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #999;
+}
+.fixture:last-child td {
+  border-bottom: none;
+}
+
+.fixture .team {
+  font-size: 24px;
+  font-family: "Courier New", Courier, monospace;
+  /* font-size: large; */
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.fixture .date {
+  margin-bottom: 10px;
+}
+
+.training-session {
+  margin: 15px 0;
+  padding: 15px;
+  box-shadow: 0px 0px 5px #999;
+}
