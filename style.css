@@ -1,0 +1,509 @@
+/* ---------- (FONT STYLES) ---------- */
+
+@font-face {
+    font-family: "Plus Jakarta";
+    src: url("/assets/fonts/PlusJakartaSans/PlusJakartaSans-Bold.woff2") format("woff2"),
+    url("/assets/fonts/PlusJakartaSans/PlusJakartaSans-Bold.woff") format("woff");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Plus Jakarta";
+    src: url("/assets/fonts/PlusJakartaSans/PlusJakartaSans-Regular.woff2") format("woff2"),
+    url("/assets/fonts/PlusJakartaSans/PlusJakartaSans-Regular.woff") format("woff");
+    font-weight: normal;
+}
+
+h1 {
+    font-family: "Teko", sans-serif;
+    font-size: 55px;
+    color: white;
+    line-height: 60px;
+    letter-spacing: 0.06em;
+    margin: 0;
+}
+
+h2, h3, h4 {
+    font-family: "Plus Jakarta", sans-serif;
+    font-weight: bold;
+}
+
+p, a, li {
+    font-family: "Plus Jakarta", sans-serif;
+    font-weight: normal;
+}
+
+/* ---------- (GENERAL STYLES) ---------- */
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100;
+    margin: 0;
+}
+
+h2 {
+    color: #064B8D;
+    font-size: 48px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p {
+    color: #676666;
+    line-height: 25px;
+}
+
+strong {
+    color: #676666;
+}
+
+.section-container {
+    border: solid 3px green;
+    margin: 0 20px;
+}
+
+.blue-text-link {
+    color: #064B8D;
+    font-weight: bold;
+}
+
+.red-text-link {
+    color: #D8232A;
+    font-weight: bold;
+}
+
+/* ---------- (#1 HOME SECTION) ---------- */
+
+#home-section {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 10% 90%;
+}
+
+/* Header & Navigation */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    z-index: 5;
+    overflow: visible;
+    background-color: white;
+}
+
+.bulls-logo {
+    width: 80px;
+    height: 90px;
+    margin: 10px;
+    
+}
+
+.rainbow-image {
+    width: 80px;
+    height: 100%;
+}
+
+/* Desktop Navigation Menu */
+.desktop-menu {
+    border: solid 3px gold;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: end;
+}
+
+.desk-nav-link, .desk-pitchero-nav-link, .ph-x-thin {
+    display: none;
+}
+
+.ph-list-thin, .ph-x-thin {
+    cursor: pointer;
+    font-size: 40px;
+    color: white;
+}
+
+.burger-menu {
+    background-color: #D8232A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 80px;
+}
+
+/* Mobile Navigation Menu */
+
+.mobile-menu-shadow {
+    z-index: 2;
+    position: absolute;
+    top: -200%;
+    opacity: 0;
+    pointer-events: none;
+    left: 0;
+    background-color: #67666675;
+    width: 100%;
+    height: 100%;
+}
+
+.mobile-menu {
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    background-color: #064B8D;
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.mob-nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 20px 30px 20px 0;
+}
+
+.mob-pitchero-link-cont {
+    background-color: #D8232A;
+    text-align: center;
+    padding: 30px;
+    width: 100%;
+}
+
+.mob-pitchero-nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* Mobile Nav Menu Appears & Disppears */
+
+.mobile-menu-shadow.menu-items-appear {
+    top: 0;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.ph-x-thin.close-menu-appears {
+    display: flex;
+}
+
+.ph-list-thin.menu-button-disappears {
+    display: none;
+}
+
+body.body-stop-scrolling {
+    height: 100%;
+    overflow-y: hidden;
+}
+
+/* Hero */
+
+.hero-subsection {
+    background-image: url("/v1/public/images/82905207_10162798659160557_736411128317345792_n.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.hero-subsection p, .hero-subsection a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero-description {
+    border: solid 2px greenyellow;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.hero-description p {
+    margin: 25px 0;
+    width: 90%;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 2px;
+}
+
+.join-button, .contact-button {
+    font-weight: bold;
+    width: 160px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.join-button {
+    background-color: #D8232A;
+}
+
+.contact-button {
+    border: solid 3px white;
+    margin-top: 15px;
+}
+
+.photo-credit {
+    border: solid 2px gold;
+    padding: 5px 20px;
+    margin-top: 15px;
+}
+
+/* ---------- (#2 SPONSOR SECTION) ---------- */
+
+#sponsor-section {
+    width: 100%;
+}
+
+#sponsor-section h2 {
+    font-size: 35px;
+}
+
+.sponsors-subsection, .affiliations-subsection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Sponsors */
+
+.sponsors-subsection {
+    border: solid 2px purple;
+}
+
+.village-inn-logo {
+    width: 250px;
+}
+/* Affiliations */
+
+.affiliations-subsection {
+    border: solid 2px purple;
+}
+
+.affiliation-logos {
+    border: solid 2px red;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.sp-england-link {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.sp-england-logo {
+    height: 100px;
+    width: 100px;
+}
+
+.eng-rugby-link {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.eng-rugby-logo {
+    height: 100px;
+    width: 100px;
+}
+
+.clubmark-link {
+    grid-area: 2 / 1 / 3 / 3;
+}
+
+.clubmark-logo {
+    width: 250px;
+}
+
+/* ---------- (#3 ABOUT SECTION) ---------- */
+
+#about-section {
+    margin: 50px 0;
+}
+
+.about-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Description*/
+
+.about-description h2 {
+    margin: 20px 0;
+}
+
+
+/* ---------- (#4 COVID INFO SECTION) ---------- */
+
+#covid-info-section {
+    text-align: right;
+}
+
+.covid-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.covid-info-description h2 {
+    margin: 20px 0;
+}
+
+.covid-info-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 35px;
+}
+
+.covid-info-buttons a {
+    display: inline-block;
+    height: 50px;
+    width: fit-content;
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.assessment-button {
+    background-color: #064B8D;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.covid-test-button {
+    border: solid 3px #064B8D;
+    color: #064B8D;
+}
+/* ---------- (#5 JOINING INFO SECTION) ---------- */
+
+#joining-info-section {
+    margin: 10px 0 50px 0;
+}
+
+#joining-info-section h3 {
+    color: #064B8D;
+}
+
+/* ---------- (#6 FIND US SECTION) ---------- */
+
+#find-us-section {
+    text-align: right;
+}
+
+#find-us-section h2 {
+    margin: 20px 0;
+}
+
+.map-image {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.find-us-button {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 35px;
+}
+
+.find-us-button a {
+    display: inline-block;
+    height: 50px;
+    width: fit-content;
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #064B8D;
+    color: white;
+}
+
+/* ---------- (#7 CONTACT SECTION) ---------- */
+
+/* Contact Info */
+
+.contact-links a {
+    color: #676666;
+    font-weight: bold;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    background-color: #064B8D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer h3 {
+    color: white;
+}
+
+.footer-vill-inn-logo {
+    width: 210px;
+    height: 80px;
+}
+
+.copyright-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.copyright-info p {
+    color: white;
+}
+
+.ph-copyright {
+    color: white;
+}
+
+.social-media-links {
+    margin-bottom: 15px;
+}
+
+.social-media-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    margin: 0 15px;
+}
