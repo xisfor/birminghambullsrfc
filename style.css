@@ -14,8 +14,14 @@
     font-weight: normal;
 }
 
+@font-face {
+    font-family: "Teko";
+    src: url("/assets/fonts/Teko/Teko-Bold.woff") format("woff");
+    font-weight: bold;
+}
+
 h1 {
-    font-family: "Teko", sans-serif;
+    font-family: "Teko",sans-serif;
     font-size: 55px;
     color: white;
     line-height: 60px;
@@ -101,7 +107,7 @@ header {
     width: 80px;
     height: 90px;
     margin: 10px;
-    
+    z-index: 6;
 }
 
 .rainbow-image {
@@ -109,15 +115,15 @@ header {
     height: 100%;
 }
 
-/* Desktop Navigation Menu */
-.desktop-menu {
+/* Navigation Menu */
+.menu {
     border: solid 3px gold;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: end;
 }
 
-.desk-nav-link, .desk-pitchero-nav-link, .ph-x-thin {
+.pitchero-nav-link, .ph-x-thin {
     display: none;
 }
 
@@ -136,61 +142,47 @@ header {
     width: 80px;
 }
 
-/* Mobile Navigation Menu */
+/* Menu Items */
 
-.mobile-menu-shadow {
-    z-index: 2;
+.menu-items {
     position: absolute;
-    top: -200%;
-    opacity: 0;
-    pointer-events: none;
-    left: 0;
-    background-color: #67666675;
-    width: 100%;
-    height: 100%;
-}
-
-.mobile-menu {
-    z-index: 3;
-    position: absolute;
-    top: 0;
     background-color: #064B8D;
-    height: 90%;
+    top: 10vh;
+    right: -100%;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: flex-end;
+    height: 85%;
+    opacity: 0;
+    display: none;
+    grid-template: repeat(6, 1fr) / 1fr;
+    justify-items: end;
+    padding-top: 30px;
 }
 
-.mob-nav-link {
-    color: white;
+.menu-items a {
     text-decoration: none;
+    color: white;
     font-size: 40px;
     font-weight: bold;
-    margin: 20px 30px 20px 0;
 }
 
-.mob-pitchero-link-cont {
+.nl1, .nl2, .nl3, .nl4, .nl5 {
+    margin-right: 30px;
+}
+
+.nl6 {
     background-color: #D8232A;
+    justify-self: stretch;
+    align-self: center;
     text-align: center;
-    padding: 30px;
-    width: 100%;
-}
-
-.mob-pitchero-nav-link {
-    color: white;
-    text-decoration: none;
-    font-size: 40px;
-    font-weight: bold;
+    padding: 25px 0;
 }
 
 /* Mobile Nav Menu Appears & Disppears */
 
-.mobile-menu-shadow.menu-items-appear {
-    top: 0;
+.menu-items.menu-items-appear {
+    display: grid;
+    right: 0;
     opacity: 1;
-    pointer-events: auto;
 }
 
 .ph-x-thin.close-menu-appears {
@@ -209,7 +201,7 @@ body.body-stop-scrolling {
 /* Hero */
 
 .hero-subsection {
-    background-image: url("/v1/public/images/82905207_10162798659160557_736411128317345792_n.jpg");
+    background-image: url("/assets/images/team-photo-one.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -422,10 +414,9 @@ body.body-stop-scrolling {
     margin: 20px 0;
 }
 
-.map-image {
+.map-embed {
     width: 100%;
     height: 350px;
-    object-fit: cover;
 }
 
 .find-us-button {

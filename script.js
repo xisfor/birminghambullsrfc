@@ -1,13 +1,13 @@
 const bodyPage = document.querySelector('body');
 const openMenuButton = document.querySelector('.ph-list-thin');
 const closeMenuButton = document.querySelector('.ph-x-thin');
-const menuItems = document.querySelector('.mobile-menu-shadow');
-const menuLinkOne = document.querySelector('.link1');
-const menuLinkTwo = document.querySelector('.link2');
-const menuLinkThree = document.querySelector('.link3');
-const menuLinkFour = document.querySelector('.link4');
-const menuLinkFive = document.querySelector('.link5');
-const menuLinkSix = document.querySelector('.link6');
+const menuItems = document.querySelector('.menu-items');
+const menuLinkOne = document.querySelector('.nl1');
+const menuLinkTwo = document.querySelector('.nl2');
+const menuLinkThree = document.querySelector('.nl3');
+const menuLinkFour = document.querySelector('.nl4');
+const menuLinkFive = document.querySelector('.nl5');
+const menuLinkSix = document.querySelector('.nl6');
 
 /* Mobile navigation menu appears when you click the menu button */
 
@@ -20,55 +20,41 @@ openMenuButton.addEventListener('click',()=> {
 
 /* Mobile navigation menu disappears when you click the X button */
 
-closeMenuButton.addEventListener('click',()=> {
+function closeMenu() {
     menuItems.classList.remove('menu-items-appear');
     closeMenuButton.classList.remove('close-menu-appears');
     openMenuButton.classList.remove('menu-button-disappears');
     bodyPage.classList.remove('body-stop-scrolling');
+}
+
+closeMenuButton.addEventListener('click',()=> {
+    closeMenu();
 });
 
 /* Mobile navigation menu disappears when you click individual menu links */
 
 menuLinkOne.addEventListener('click',()=> {
-    menuItems.classList.remove('menu-items-appear');
-    closeMenuButton.classList.remove('close-menu-appears');
-    openMenuButton.classList.remove('menu-button-disappears');
-    bodyPage.classList.remove('body-stop-scrolling');
+    closeMenu();
 });
 
 menuLinkTwo.addEventListener('click',()=> {
-    menuItems.classList.remove('menu-items-appear');
-    closeMenuButton.classList.remove('close-menu-appears');
-    openMenuButton.classList.remove('menu-button-disappears');
-    bodyPage.classList.remove('body-stop-scrolling');
+    closeMenu();
 });
 
 menuLinkThree.addEventListener('click',()=> {
-    menuItems.classList.remove('menu-items-appear');
-    closeMenuButton.classList.remove('close-menu-appears');
-    openMenuButton.classList.remove('menu-button-disappears');
-    bodyPage.classList.remove('body-stop-scrolling');
+    closeMenu();
 });
 
 menuLinkFour.addEventListener('click',()=> {
-    menuItems.classList.remove('menu-items-appear');
-    closeMenuButton.classList.remove('close-menu-appears');
-    openMenuButton.classList.remove('menu-button-disappears');
-    bodyPage.classList.remove('body-stop-scrolling');
+    closeMenu();
 });
 
 menuLinkFive.addEventListener('click',()=> {
-    menuItems.classList.remove('menu-items-appear');
-    closeMenuButton.classList.remove('close-menu-appears');
-    openMenuButton.classList.remove('menu-button-disappears');
-    bodyPage.classList.remove('body-stop-scrolling');
+    closeMenu();
 });
 
 menuLinkSix.addEventListener('click',()=> {
-    menuItems.classList.remove('menu-items-appear');
-    closeMenuButton.classList.remove('close-menu-appears');
-    openMenuButton.classList.remove('menu-button-disappears');
-    bodyPage.classList.remove('body-stop-scrolling');
+    closeMenu();
 });
 
 
