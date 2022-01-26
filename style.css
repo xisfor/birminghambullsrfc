@@ -62,7 +62,8 @@ h3 {
 
 p {
     color: #676666;
-    line-height: 25px;
+    line-height: 27.5px;
+    margin: 25px 0;
 }
 
 strong {
@@ -70,7 +71,6 @@ strong {
 }
 
 .section-container {
-    border: solid 3px green;
     margin: 0 20px;
 }
 
@@ -117,7 +117,6 @@ header {
 
 /* Navigation Menu */
 .menu {
-    border: solid 3px gold;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: end;
@@ -150,12 +149,12 @@ header {
     top: 10vh;
     right: -100%;
     width: 100%;
-    height: 85%;
+    height: 80%;
     opacity: 0;
     display: none;
     grid-template: repeat(6, 1fr) / 1fr;
     justify-items: end;
-    padding-top: 30px;
+    padding-top: 60px;
 }
 
 .menu-items a {
@@ -165,31 +164,31 @@ header {
     font-weight: bold;
 }
 
-.nl1, .nl2, .nl3, .nl4, .nl5 {
-    margin-right: 30px;
+.nlwhite {
+    margin: 0 30px 0 0;
 }
 
-.nl6 {
+.nlred {
     background-color: #D8232A;
     justify-self: stretch;
-    align-self: center;
+    align-self: end;
     text-align: center;
     padding: 25px 0;
 }
 
 /* Mobile Nav Menu Appears & Disppears */
 
-.menu-items.menu-items-appear {
+.menu-items.menu-items-visible {
     display: grid;
     right: 0;
     opacity: 1;
 }
 
-.ph-x-thin.close-menu-appears {
+.ph-x-thin.close-menu-visible {
     display: flex;
 }
 
-.ph-list-thin.menu-button-disappears {
+.ph-list-thin.menu-button-invisible {
     display: none;
 }
 
@@ -201,7 +200,6 @@ body.body-stop-scrolling {
 /* Hero */
 
 .hero-subsection {
-    background-image: url("/assets/images/team-photo-one.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -224,7 +222,6 @@ body.body-stop-scrolling {
 }
 
 .hero-description {
-    border: solid 2px greenyellow;
     padding: 10px 20px;
     width: 100%;
 }
@@ -259,9 +256,8 @@ body.body-stop-scrolling {
 }
 
 .photo-credit {
-    border: solid 2px gold;
     padding: 5px 20px;
-    margin-top: 15px;
+    margin: 15px 0 0 0;
 }
 
 /* ---------- (#2 SPONSOR SECTION) ---------- */
@@ -283,23 +279,15 @@ body.body-stop-scrolling {
 
 /* Sponsors */
 
-.sponsors-subsection {
-    border: solid 2px purple;
-}
-
 .village-inn-logo {
     width: 250px;
 }
 /* Affiliations */
 
-.affiliations-subsection {
-    border: solid 2px purple;
-}
-
 .affiliation-logos {
-    border: solid 2px red;
     display: grid;
     grid-template: 1fr 1fr / 1fr 1fr;
+    grid-row-gap: 20px;
     justify-items: center;
     align-items: center;
 }
@@ -361,6 +349,8 @@ body.body-stop-scrolling {
     object-fit: cover;
 }
 
+/* Description*/
+
 .covid-info-description h2 {
     margin: 20px 0;
 }
@@ -387,7 +377,7 @@ body.body-stop-scrolling {
 .assessment-button {
     background-color: #064B8D;
     color: white;
-    margin-bottom: 15px;
+    margin: 0 0 15px 0;
 }
 
 .covid-test-button {
@@ -440,13 +430,16 @@ body.body-stop-scrolling {
 }
 
 /* ---------- (#7 CONTACT SECTION) ---------- */
+#contact-section .section-container {
+    padding: 20px 0;
+}
 
 /* Contact Info */
 
 .contact-links a {
     color: #676666;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 22px;
     display: flex;
     flex-direction: column;
     margin: 20px 0;
@@ -489,7 +482,7 @@ footer h3 {
 }
 
 .social-media-links {
-    margin-bottom: 15px;
+    margin: 0 0 15px 0;
 }
 
 .social-media-links a {
@@ -498,3 +491,4 @@ footer h3 {
     font-size: 25px;
     margin: 0 15px;
 }
+
