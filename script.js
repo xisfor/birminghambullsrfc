@@ -34,17 +34,17 @@ menuItems.addEventListener("click", () => {
 /* Random image on page load */
 
 const images = [
-  '/assets/images/team-photo-one.jpg',
-  '/assets/images/team-photo-two.jpg',
-  '/assets/images/team-photo-three.jpg',
-  '/assets/images/team-photo-four.jpg'
+  "/assets/images/team-photo-one.jpg",
+  "/assets/images/team-photo-two.jpg",
+  "/assets/images/team-photo-three.jpg",
+  "/assets/images/team-photo-four.jpg",
 ];
 
-const imageDestination = document.querySelector('.hero-subsection');
+const imageDestination = document.querySelector(".hero-subsection");
 
 function displayImage(num) {
-   num = Math.floor(Math.random() * 4);
-   imageDestination.style.backgroundImage = `url("${images[num]}")`;
-};
+  num = Math.floor(Math.random() * images.length);
+  imageDestination.style.backgroundImage = `url("${images[num]}")`;
+}
 
 displayImage();
