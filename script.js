@@ -34,10 +34,10 @@ menuItems.addEventListener("click", () => {
 /* Random image on page load */
 
 const images = [
-  "/assets/images/team-photo-one.jpg",
-  "/assets/images/team-photo-two.jpg",
-  "/assets/images/team-photo-three.jpg",
-  "/assets/images/team-photo-four.jpg",
+  "./assets/images/team-photo-one.jpg",
+  "./assets/images/team-photo-two.jpg",
+  "./assets/images/team-photo-three.jpg",
+  "./assets/images/team-photo-four.jpg",
 ];
 
 const imageDestination = document.querySelector(".hero-subsection");
