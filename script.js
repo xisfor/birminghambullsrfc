@@ -42,8 +42,8 @@ const images = [
 
 const imageDestination = document.querySelector(".hero-subsection");
 
-function displayImage(num) {
-  num = Math.floor(Math.random() * images.length);
+function displayImage() {
+  const num = Math.floor(Math.random() * images.length);
   imageDestination.style.backgroundImage = `url("${images[num]}")`;
 }
 

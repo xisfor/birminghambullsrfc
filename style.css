@@ -57,6 +57,7 @@ li {
 body {
   width: 100;
   margin: 0;
+  background-color: #FEFEFF;
 }
 
 h2 {
@@ -109,7 +110,7 @@ header {
   justify-content: space-between;
   z-index: 5;
   overflow: visible;
-  background-color: white;
+  background-color: #FEFEFF;
 }
 
 .bulls-logo {
@@ -405,6 +406,11 @@ body.body-stop-scrolling {
 
 #joining-info-section h3 {
   color: #064b8d;
+}
+
+#joining-info-section .section-container {
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 /* ---------- (#6 FIND US SECTION) ---------- */
