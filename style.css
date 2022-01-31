@@ -1,0 +1,512 @@
+/* ---------- (FONT STYLES) ---------- */
+
+@font-face {
+  font-family: "Plus Jakarta";
+  src: url("/assets/fonts/PlusJakartaSans/PlusJakartaSans-Bold.woff2")
+      format("woff2"),
+    url("/assets/fonts/PlusJakartaSans/PlusJakartaSans-Bold.woff")
+      format("woff");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Plus Jakarta";
+  src: url("/assets/fonts/PlusJakartaSans/PlusJakartaSans-Regular.woff2")
+      format("woff2"),
+    url("/assets/fonts/PlusJakartaSans/PlusJakartaSans-Regular.woff")
+      format("woff");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Teko";
+  src: url("/assets/fonts/Teko/Teko-Bold.woff") format("woff");
+  font-weight: bold;
+}
+
+h1 {
+  font-family: "Teko", sans-serif;
+  font-size: 55px;
+  color: white;
+  line-height: 60px;
+  letter-spacing: 0.06em;
+  margin: 0;
+}
+
+h2,
+h3,
+h4 {
+  font-family: "Plus Jakarta", sans-serif;
+  font-weight: bold;
+}
+
+p,
+a,
+li {
+  font-family: "Plus Jakarta", sans-serif;
+  font-weight: normal;
+}
+
+/* ---------- (GENERAL STYLES) ---------- */
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100;
+  margin: 0;
+  background-color: #FEFEFF;
+}
+
+h2 {
+  color: #064b8d;
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+p {
+  color: #676666;
+  line-height: 27.5px;
+  margin: 25px 0;
+}
+
+h4 {
+  margin-bottom: -15px;
+  color: #676666;
+}
+
+.section-container {
+  margin: 0 20px;
+}
+
+.blue-text-link {
+  color: #064b8d;
+  font-weight: bold;
+}
+
+.red-text-link {
+  color: #d8232a;
+  font-weight: bold;
+}
+
+/* ---------- (#1 HOME SECTION) ---------- */
+
+#home-section {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 10% 90%;
+}
+
+/* Header & Navigation */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  z-index: 5;
+  overflow: visible;
+  background-color: #FEFEFF;
+}
+
+.bulls-logo {
+  width: 80px;
+  height: 90px;
+  margin: 10px;
+  z-index: 6;
+}
+
+.rainbow-image {
+  width: 80px;
+  height: 100%;
+}
+
+/* Navigation Menu */
+.menu {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: end;
+}
+
+.pitchero-nav-link,
+.ph-x-thin {
+  display: none;
+}
+
+.ph-list-thin,
+.ph-x-thin {
+  cursor: pointer;
+  font-size: 40px;
+  color: white;
+}
+
+.burger-menu {
+  background-color: #d8232a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 80px;
+}
+
+/* Menu Items */
+
+.menu-items {
+  position: absolute;
+  background-color: #064b8d;
+  top: 10vh;
+  right: -100%;
+  width: 100%;
+  height: 80%;
+  opacity: 0;
+  display: none;
+  grid-template: repeat(6, 1fr) / 1fr;
+  justify-items: end;
+  padding-top: 60px;
+}
+
+.menu-items a {
+  text-decoration: none;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.nlwhite {
+  margin: 0 30px 0 0;
+}
+
+.nlred {
+  background-color: #d8232a;
+  justify-self: stretch;
+  align-self: end;
+  text-align: center;
+  padding: 25px 0;
+}
+
+/* Mobile Nav Menu Appears & Disppears */
+
+.menu-items.menu-items-visible {
+  display: grid;
+  right: 0;
+  opacity: 1;
+}
+
+.ph-x-thin.close-menu-visible {
+  display: flex;
+}
+
+.ph-list-thin.menu-button-invisible {
+  display: none;
+}
+
+body.body-stop-scrolling {
+  height: 100%;
+  overflow-y: hidden;
+}
+
+/* Hero */
+
+.hero-subsection {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.hero-subsection p,
+.hero-subsection a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero-description {
+  padding: 10px 20px;
+  width: 100%;
+}
+
+.hero-description p {
+  margin: 25px 0;
+  width: 90%;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 2px;
+}
+
+.join-button,
+.contact-button {
+  font-weight: bold;
+  width: 160px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.join-button {
+  background-color: #d8232a;
+}
+
+.contact-button {
+  border: solid 3px white;
+  margin-top: 15px;
+}
+
+.photo-credit {
+  padding: 5px 20px;
+  margin: 15px 0 0 0;
+}
+
+/* ---------- (#2 SPONSOR SECTION) ---------- */
+
+#sponsor-section {
+  width: 100%;
+}
+
+#sponsor-section h2 {
+  font-size: 35px;
+}
+
+.sponsors-subsection,
+.affiliations-subsection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Sponsors */
+
+.village-inn-logo {
+  width: 250px;
+}
+/* Affiliations */
+
+.affiliation-logos {
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr;
+  grid-row-gap: 20px;
+  justify-items: center;
+  align-items: center;
+}
+
+.sp-england-link {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.sp-england-logo {
+  height: 100px;
+  width: 100px;
+}
+
+.eng-rugby-link {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.eng-rugby-logo {
+  height: 100px;
+  width: 100px;
+}
+
+.clubmark-link {
+  grid-area: 2 / 1 / 3 / 3;
+}
+
+.clubmark-logo {
+  width: 250px;
+}
+
+/* ---------- (#3 ABOUT SECTION) ---------- */
+
+#about-section {
+  margin: 50px 0;
+}
+
+.about-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+/* Description*/
+
+.about-description h2 {
+  margin: 20px 0;
+}
+
+/* ---------- (#4 COVID INFO SECTION) ---------- */
+
+#covid-info-section {
+  text-align: right;
+}
+
+.covid-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+/* Description*/
+
+.covid-info-description h2 {
+  margin: 20px 0;
+}
+
+.covid-info-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 35px;
+}
+
+.covid-info-buttons a {
+  display: inline-block;
+  height: 50px;
+  width: fit-content;
+  padding: 0 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.assessment-button {
+  background-color: #064b8d;
+  color: white;
+  margin: 0 0 15px 0;
+}
+
+.covid-test-button {
+  border: solid 3px #064b8d;
+  color: #064b8d;
+}
+/* ---------- (#5 JOINING INFO SECTION) ---------- */
+
+#joining-info-section {
+  margin: 10px 0 50px 0;
+}
+
+#joining-info-section h3 {
+  color: #064b8d;
+}
+
+#joining-info-section .section-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* ---------- (#6 FIND US SECTION) ---------- */
+
+#find-us-section {
+  text-align: right;
+}
+
+#find-us-section h2 {
+  margin: 20px 0;
+}
+
+.map-embed {
+  width: 100%;
+  height: 350px;
+}
+
+.find-us-button {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 35px;
+}
+
+.find-us-button a {
+  display: inline-block;
+  height: 50px;
+  width: fit-content;
+  padding: 0 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #064b8d;
+  color: white;
+}
+
+/* ---------- (#7 CONTACT SECTION) ---------- */
+#contact-section .section-container {
+  padding: 20px 0;
+}
+
+/* Contact Info */
+
+.contact-links a {
+  color: #676666;
+  font-weight: bold;
+  font-size: 22px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+/* Footer */
+
+footer {
+  width: 100%;
+  background-color: #064b8d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+}
+
+footer h3 {
+  color: white;
+}
+
+.footer-vill-inn-logo {
+  width: 210px;
+  height: 80px;
+}
+
+.copyright-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.copyright-info p {
+  color: white;
+}
+
+.ph-copyright {
+  color: white;
+}
+
+.social-media-links {
+  margin: 0 0 15px 0;
+}
+
+.social-media-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  margin: 0 15px;
+}

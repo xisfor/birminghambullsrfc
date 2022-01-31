@@ -1,0 +1,171 @@
+/* --------------- (LAPTOP SMALL) --------------- */
+@media all and (min-width: 1400px) and (min-height: 700px) {
+  /* ---------- (GENERAL STYLES) ---------- */
+  h1 {
+    font-size: 70px;
+  }
+  /* ---------- (#1 HOME SECTION) ---------- */
+  #home-section {
+    height: 100vh;
+    min-height: 700px;
+  }
+
+  /* Menu Items */
+  .nlwhite {
+    margin: 0 20px;
+  }
+
+  .burger-menu {
+    width: 220px;
+  }
+  /* Hero */
+  .join-button,
+  .contact-button {
+    width: 180px;
+  }
+
+  /* ---------- (#4 COVID INFO SECTION) ---------- */
+  .covid-info-buttons a {
+    padding: 0 30px;
+  }
+}
+/* --------------- (LAPTOP LARGE) --------------- */
+@media all and (min-width: 1500px) and (min-height: 700px) {
+  /* Hero */
+  .hero-description p {
+    letter-spacing: 0.5px;
+  }
+}
+/* --------------- (DESKTOP WIDE) --------------- */
+@media all and (min-width: 1800px) and (min-height: 900px) {
+  /* ---------- (GENERAL STYLES) ---------- */
+  h1 {
+    font-size: 95px;
+    line-height: 80px;
+  }
+
+  h2 {
+    font-size: 52px;
+  }
+
+  h4 {
+      font-size: 20px;
+  }
+
+  p {
+    font-size: 20px;
+    line-height: 40px;
+  }
+
+  i {
+    font-size: 20px;
+  }
+
+  .section-container {
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+  /* ---------- (#1 HOME SECTION) ---------- */
+  #home-section {
+    height: 95vh;
+    max-height: 1300px;
+    grid-template-rows: 9% 91%;
+  }
+  /* Header & Navigation */
+  .bulls-logo {
+    width: 150px;
+    height: 170px;
+    margin: 20px 0 0 20px;
+  }
+
+  /* Navigation Menu */
+  .burger-menu {
+    width: 250px;
+  }
+  /* Menu Items */
+  .menu a {
+    font-size: 18px;
+  }
+  /* Hero */
+  .hero-subsection {
+    background-position: top;
+  }
+
+  .hero-description {
+    width: 100%;
+    max-width: 1500px;
+    margin: 100px auto;
+  }
+
+  .hero-description p {
+    letter-spacing: 0;
+    width: 50%;
+  }
+  /* ---------- (#2 SPONSOR SECTION) ---------- */
+  #sponsor-section {
+    margin: 10px 0 60px 0;
+  }
+  /* Sponsors */
+  .village-inn-logo {
+    width: 320px;
+  }
+  /* Affiliations */
+
+  .sp-england-logo {
+    height: 130px;
+    width: 130px;
+  }
+
+  .eng-rugby-logo {
+    height: 130px;
+    width: 130px;
+  }
+
+  .clubmark-logo {
+    width: 330px;
+  }
+  /* ---------- (#3 ABOUT SECTION) ---------- */
+  /* Description*/
+
+  .about-image {
+    height: 450px;
+  }
+  /* ---------- (#4 COVID INFO SECTION) ---------- */
+  .covid-image {
+    height: 500px;
+  }
+  /* ---------- (#6 FIND US SECTION) ---------- */
+  .map-embed {
+    height: 500px;
+  }
+  /* ---------- (#7 CONTACT SECTION) ---------- */
+  /* Contact Info */
+  .contact-links a {
+    font-size: 35px;
+  }
+  /* Footer */
+  footer h3 {
+    font-size: 20px;
+  }
+
+  .footer-vill-inn-logo {
+    width: 150px;
+    height: 55px;
+  }
+}
+/* --------------- (DESKTOP ULTRA-WIDE) --------------- */
+@media all and (min-width: 2100px) and (min-height: 1000px) {
+  /* ---------- (GENERAL STYLES) ---------- */
+  .section-container {
+    max-width: 1600px;
+  }
+
+  .hero-description {
+    max-width: 1600px;
+  }
+  /* ---------- (#1 HOME SECTION) ---------- */
+  /* Hero */
+  .hero-subsection {
+    background-position: center;
+  }
+}

@@ -1,0 +1,617 @@
+/* --------------- (TABLET SMALL) --------------- */
+/* (Portrait) */
+@media screen and (min-width: 768px) and (orientation: portrait) {
+  /* ---------- (GENERAL STYLES) ---------- */
+  h1 {
+    font-size: 65px;
+  }
+
+  .section-container {
+    margin: 0 30px;
+  }
+  /* ---------- (#1 HOME SECTION) ---------- */
+  #home-section {
+    height: 70vh;
+    min-height: 700px;
+  }
+  /* Header & Navigation */
+  .bulls-logo {
+    width: 140px;
+    height: 160px;
+  }
+
+  /* Navigation Menu */
+  /* Menu Items */
+
+  .menu-items {
+    top: 7vh;
+  }
+  /* Hero */
+
+  .hero-description {
+    width: 70%;
+  }
+
+  .hero-buttons {
+    flex-direction: row;
+  }
+  .contact-button {
+    margin: 0 0 0 30px;
+  }
+
+  .photo-credit {
+    align-self: flex-end;
+  }
+  /* ---------- (#2 SPONSOR SECTION) ---------- */
+
+  #sponsor-section .section-container {
+    display: flex;
+    justify-content: space-around;
+  }
+  /* Sponsors */
+
+  .sponsors-logo {
+    height: 210px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* Affiliations */
+
+  .affiliation-logos {
+    height: 210px;
+  }
+
+  /* ---------- (#3 ABOUT SECTION) ---------- */
+  #about-section .section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .about-image {
+    width: 80%;
+    height: 300px;
+  }
+  /* Description*/
+
+  .about-description {
+    width: 80%;
+  }
+  /* ---------- (#4 COVID INFO SECTION) ---------- */
+
+  #covid-info-section .section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .covid-image {
+    width: 80%;
+    height: 300px;
+  }
+
+  /* Description*/
+  .covid-info-description {
+    width: 80%;
+  }
+
+  .covid-info-buttons {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .assessment-button {
+    margin: 0 30px 0 0;
+  }
+  /* ---------- (#5 JOINING INFO SECTION) ---------- */
+
+  #joining-info-section .section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #joining-info-section h2 {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* ---------- (#6 FIND US SECTION) ---------- */
+
+  #find-us-section .section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .map-embed {
+    width: 80%;
+  }
+
+  /* ---------- (#7 CONTACT SECTION) ---------- */
+  /* Contact Info */
+  .contact-links a {
+    font-size: 30px;
+  }
+
+  /* Footer */
+
+  .social-media-links a {
+    font-size: 30px;
+  }
+}
+
+/* (Landscape) */
+
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+  /* ---------- (GENERAL STYLES) ---------- */
+  h1 {
+    font-size: 60px;
+  }
+
+  .section-container {
+    margin: 0 30px;
+  }
+
+  /* Section Margins */
+  #sponsor-section {
+    margin: 30px 0;
+  }
+
+  #about-section {
+    margin-bottom: 120px;
+  }
+
+  #covid-info-section,
+  #find-us-section {
+    margin: 150px 0;
+  }
+  /* ---------- (#1 HOME SECTION) ---------- */
+  #home-section {
+    height: 80vh;
+    grid-template-rows: 12% 88%;
+    min-height: 700px;
+  }
+  /* Header & Navigation */
+  .bulls-logo {
+    width: 150px;
+    height: 170px;
+  }
+
+  /* Navigation Menu */
+  .menu {
+    display: flex;
+    align-items: center;
+  }
+
+  .rainbow-image {
+    width: 100px;
+  }
+
+  /* Menu Items */
+
+  .menu-items {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: static;
+    padding-top: 0;
+    opacity: 1;
+  }
+
+  .menu-items a {
+    font-size: 16px;
+    color: black;
+  }
+
+  .nlwhite {
+    margin: 0 12.5px;
+  }
+
+  .nlred {
+    display: none;
+  }
+
+  .ph-list-thin,
+  .ph-x-thin {
+    display: none;
+  }
+
+  .burger-menu {
+    width: 150px;
+  }
+
+  .pitchero-nav-link {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  /* Hero */
+
+  .hero-description {
+    width: 70%;
+  }
+
+  .hero-buttons {
+    flex-direction: row;
+  }
+  .contact-button {
+    margin: 0 0 0 30px;
+  }
+
+  .photo-credit {
+    align-self: flex-end;
+  }
+  /* ---------- (#2 SPONSOR SECTION) ---------- */
+
+  #sponsor-section .section-container {
+    display: flex;
+    justify-content: space-around;
+  }
+  /* Sponsors */
+
+  .sponsors-logo {
+    height: 210px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* Affiliations */
+
+  .affiliation-logos {
+    height: 210px;
+  }
+
+  /* ---------- (#3 ABOUT SECTION) ---------- */
+  #about-section .section-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .about-image {
+    width: 50%;
+    height: 300px;
+  }
+  /* Description*/
+
+  .about-description {
+    width: 45%;
+  }
+  /* ---------- (#4 COVID INFO SECTION) ---------- */
+
+  #covid-info-section .section-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+  }
+
+  .covid-image {
+    width: 45%;
+    height: 450px;
+  }
+
+  /* Description*/
+  .covid-info-description {
+    width: 50%;
+  }
+
+  .covid-info-buttons {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .covid-info-buttons a {
+    padding: 0 20px;
+  }
+
+  .assessment-button {
+    margin: 0 30px 0 0;
+  }
+  /* ---------- (#5 JOINING INFO SECTION) ---------- */
+
+  #joining-info-section .section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 960px;
+
+  }
+
+  #joining-info-section h2 {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* ---------- (#6 FIND US SECTION) ---------- */
+
+  #find-us-section .section-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+  }
+
+  .map-embed {
+    width: 60%;
+  }
+  /* Description*/
+
+  .find-us-description {
+    width: 35%;
+  }
+
+  .find-us-button {
+    justify-content: flex-start;
+  }
+
+  /* ---------- (#7 CONTACT SECTION) ---------- */
+  #contact-section .section-container {
+    display: grid;
+    grid-template: 30% 70% / 55% 45%;
+  }
+  /* Contact Info */
+
+  .contact-title {
+    grid-area: 1 / 1 / 2 / 3;
+    margin-bottom: 150px;
+  }
+
+  .contact-links {
+    align-self: start;
+    grid-area: 2 / 1 / 3 / 2;
+  }
+
+  .contact-links a {
+    font-size: 30px;
+    margin: 30px 0;
+  }
+
+  .contact-description {
+    align-self: start;
+    grid-area: 2 / 2 / 3 / 3;
+  }
+
+  /* Footer */
+
+  footer {
+    height: 100px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  footer h3 {
+    font-size: 13px;
+  }
+
+  .social-sponsors {
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-vill-inn-logo {
+    width: 115px;
+    height: 45px;
+    margin: 0 0 0 40px;
+  }
+
+  .copyright-info {
+    margin-bottom: 12px;
+    font-size: 13px;
+  }
+
+  .social-media-info {
+    display: flex;
+    align-items: center;
+  }
+  .social-media-links {
+    margin: 0 0 0 40px;
+    display: flex;
+  }
+  .social-media-links a {
+    font-size: 20px;
+    display: flex;
+  }
+}
+
+/* --------------- (TABLET LARGE) --------------- */
+/* (Portrait) */
+@media screen and (min-width: 1024px) and (orientation: portrait) {
+  /* ---------- (GENERAL STYLES) ---------- */
+  p {
+    font-size: 18px;
+  }
+
+  /* ---------- (#1 HOME SECTION) ---------- */
+  #home-section {
+    height: 60vh;
+    grid-template-rows: 10% 90%;
+  }
+  /* Header & Navigation */
+  .bulls-logo {
+    width: 90px;
+    height: 105px;
+  }
+
+  /* Navigation Menu */
+  .menu {
+    display: flex;
+    align-items: center;
+  }
+
+  .rainbow-image {
+    width: 100px;
+  }
+
+  /* Menu Items */
+
+  .menu-items {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: static;
+    padding-top: 0;
+    opacity: 1;
+  }
+
+  .menu-items a {
+    font-size: 16px;
+    color: black;
+  }
+
+  .nlwhite {
+    margin: 0 12.5px;
+  }
+
+  .nlred {
+    display: none;
+  }
+
+  .ph-list-thin,
+  .ph-x-thin {
+    display: none;
+  }
+
+  .burger-menu {
+    width: 160px;
+  }
+
+  .pitchero-nav-link {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  /* Hero */
+
+  .hero-description {
+    width: 70%;
+  }
+
+  .hero-buttons {
+    flex-direction: row;
+  }
+  .contact-button {
+    margin: 0 0 0 30px;
+  }
+
+  .photo-credit {
+    align-self: flex-end;
+  }
+
+  /* ---------- (#3 ABOUT SECTION) ---------- */
+  .about-image {
+    height: 370px;
+  }
+
+  /* ---------- (#4 COVID INFO SECTION) ---------- */
+  .covid-image {
+    height: 370px;
+  }
+
+  .covid-info-buttons a {
+    padding: 0 25px;
+    font-size: 18px;
+  }
+
+  /* ---------- (#6 FIND US SECTION) ---------- */
+  .map-embed {
+    height: 370px;
+  }
+
+  .find-us-button a {
+    font-size: 18px;
+  }
+}
+
+/* (Landscape) */
+@media all and (min-width: 1280px) and (orientation: landscape) {
+  /* ---------- (GENERAL STYLES) ---------- */
+  /* ---------- (#1 HOME SECTION) ---------- */
+
+  /* Header & Navigation */
+  .bulls-logo {
+    width: 150px;
+    height: 170px;
+    margin: 10px 0 0 10px;
+  }
+  /* Navigation Menu */
+  .rainbow-image {
+    width: 150px;
+  }
+  /* Menu Items */
+  .nlwhite {
+    margin: 0 15px;
+  }
+
+  .burger-menu {
+    width: 200px;
+  }
+  /* Hero */
+
+  .hero-description {
+    width: 50%;
+  }
+
+  .hero-description p {
+    line-height: 35px;
+  }
+
+  .contact-button {
+    margin: 0 0 0 50px;
+  }
+
+  /* ---------- (#2 SPONSOR SECTION) ---------- */
+  #sponsor-section h2 {
+    font-size: 40px;
+  }
+  /* Sponsors */
+  .village-inn-logo {
+    width: 300px;
+  }
+  /* Affiliations */
+
+  .sp-england-logo {
+    height: 120px;
+    width: 120px;
+  }
+
+  .eng-rugby-logo {
+    height: 120px;
+    width: 120px;
+  }
+
+  .clubmark-logo {
+    width: 310px;
+  }
+  /* ---------- (#3 ABOUT SECTION) ---------- */
+  .about-image {
+    height: 400px;
+  }
+  /* ---------- (#4 COVID INFO SECTION) ---------- */
+  .covid-image {
+    height: 420px;
+  }
+  /* ---------- (#5 JOINING INFO SECTION) ---------- */
+  #joining-info-section h3 {
+    font-size: 30px;
+  }
+  /* ---------- (#6 FIND US SECTION) ---------- */
+  .map-embed {
+    height: 400px;
+  }
+  /* ---------- (#7 CONTACT SECTION) ---------- */
+  /* Contact Info */
+  .contact-links a {
+    margin: 40px 0;
+  }
+}
