@@ -57,7 +57,7 @@ li {
 body {
   width: 100;
   margin: 0;
-  background-color: #FEFEFF;
+  background-color: #fefeff;
 }
 
 h2 {
@@ -110,7 +110,7 @@ header {
   justify-content: space-between;
   z-index: 5;
   overflow: visible;
-  background-color: #FEFEFF;
+  background-color: #fefeff;
 }
 
 .bulls-logo {
@@ -483,6 +483,11 @@ footer h3 {
 .footer-vill-inn-logo {
   width: 210px;
   height: 80px;
+}
+
+.footer-xisfor-logo {
+  width: 40px;
+  height: 40px;
 }
 
 .copyright-info {
