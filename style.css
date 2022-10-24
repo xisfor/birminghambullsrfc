@@ -2,19 +2,15 @@
 
 @font-face {
   font-family: "Plus Jakarta";
-  src: url("./assets/fonts/PlusJakartaSans/PlusJakartaSans-Bold.woff2")
-      format("woff2"),
-    url("./assets/fonts/PlusJakartaSans/PlusJakartaSans-Bold.woff")
-      format("woff");
+  src: url("./assets/fonts/PlusJakartaSans/PlusJakartaSans-Bold.woff2") format("woff2"),
+    url("./assets/fonts/PlusJakartaSans/PlusJakartaSans-Bold.woff") format("woff");
   font-weight: bold;
 }
 
 @font-face {
   font-family: "Plus Jakarta";
-  src: url("./assets/fonts/PlusJakartaSans/PlusJakartaSans-Regular.woff2")
-      format("woff2"),
-    url("./assets/fonts/PlusJakartaSans/PlusJakartaSans-Regular.woff")
-      format("woff");
+  src: url("./assets/fonts/PlusJakartaSans/PlusJakartaSans-Regular.woff2") format("woff2"),
+    url("./assets/fonts/PlusJakartaSans/PlusJakartaSans-Regular.woff") format("woff");
   font-weight: normal;
 }
 
@@ -40,6 +36,7 @@ h4 {
   font-weight: bold;
 }
 
+body,
 p,
 a,
 li {
